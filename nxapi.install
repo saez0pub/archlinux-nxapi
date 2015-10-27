@@ -1,0 +1,4 @@
+post_install(){
+  echo "Make sure youa have python2 elastic search lib (pip2 install elasticsearch)"
+  echo "start your ES server and run the install scipt /opt/nxapi/post_install.sh"
+}
