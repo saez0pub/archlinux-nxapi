@@ -13,7 +13,7 @@ md5sums=('1bc31058991268e4cfdb44e9b6d8b3b3'
          '503ae66aa63f96843007ae97813a3a9c')
 
 package() {
-  install -dm700 "$pkgdir/opt"
+  install -dm755 "$pkgdir/opt"
   cp -R $srcdir/naxsi-$pkgver/nxapi $pkgdir/opt/ 
   sed -i 's:#!/usr/bin/env python$:#!/usr/bin/env python2:' $pkgdir/opt/nxapi/*.py
   sed -i 's:/etc/nginx/naxsi_core.rules:/opt/nxapi/naxsi_core.rules:' $pkgdir/opt/nxapi/nxapi.json
